@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+    <!-- подключили шрифты google fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    >
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    >
+    <!-- так мы подключаем css к странице -->
+    <link
+      rel="stylesheet"
+      href="style.css"
+    >
+    <title>CSS intro</title>
+    <!-- внутренний css -->
+    <style>
+      h1 {
+        color: red;
+      }
+
+      body {
+        background-color: rgb(231, 231, 231);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- в h1 инлайновые стили имеют наивысший приоритет -->
+    <h1 style="color: blue">CSS intro 🎨</h1>
+    <p class="subheading important-text">CSS от англ. Cascading Style Sheets</p>
+    <p>
+      <a
+        class="link-selector"
+        target="_blank"
+        href="https://www.w3schools.com/cssref/css_selectors.php"
+      >CSS селекторы </a>
+      используются для того, чтобы найти (выбрать) нужный элемент <span style="color: blue;" class="html-red"> HTML</span> страницы и
+      стилизовать его.
+    </p>
+    <h5>Селекторы в CSS:</h5>
+    <ul>
+      <li>По тегу</li>
+      <li>По классу через '.'</li>
+      <li>По id через '#' (не рекомендуется для стилей)</li>
+      <li>Через '*' для всех элементов</li>
+      <li>Через запятую можно обращаться к нескольким селекторам</li>
+    </ul>
+    <h5 class="heading-css">Три способа писать CSS:</h5>
+    <span class="heading-css__span important-text">Приоритет выполнения от меньшего к большему</span>
+    <ol>
+      <li>Внешний CSS (предпочтительный способ)</li>
+      <li>Внутренний CSS</li>
+      <li>Инлайновый CSS</li>
+    </ol>
+  </body>
+
+</html>

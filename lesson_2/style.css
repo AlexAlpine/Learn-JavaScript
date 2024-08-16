@@ -1,0 +1,79 @@
+* {
+    text-align: left;
+    /* font-family подключает шрифт к элементу */
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+  }
+  
+  h1 {
+    font-family: "Bungee Spice", sans-serif;
+    /* цвет шрифта */
+    color: red;
+    /* выравнивание текста */
+    text-align: center;
+  }
+  
+  
+  h1 {
+    /* размер шрифта */
+    font-size: 25px;
+    color: green;
+  }
+  
+  /* селектор по классу в приоритет над селектором по тегам */
+  .subheading {
+    text-decoration: underline;
+    text-align: center;
+  }
+  
+  /* селектор по тегу */
+  p {
+    /* font-family: "Dancing Script", cursive; */
+    /* подчеркивание текста */
+    text-align: left;
+  }
+  
+  .html-red {
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    /* можно повысить приоритет свойства применив !important после значения свойства */
+    color: rgb(255, 132, 0) !important;
+  }
+  
+  .important-text {
+    color: rgb(139, 0, 0);
+  }
+  
+  ul {
+    /* убираем стилизацию с точками */
+    list-style-type: upper-roman;
+  }
+  
+  
+  
+  li {
+    font-size: 12px;
+  }
+  
+  /* эти стили применятся только к li на уровень ниже ul */
+  ul>li {
+    /* нижний отступ */
+    margin-bottom: 5px;
+  }
+  
+  .heading-css {
+    margin-bottom: 5px;
+  }
+  
+  .heading-css__span {
+    font-size: 10px;
+  }
+  
+  .link-selector {
+    color: rgb(35, 53, 119);
+  }
+  
+  /* псевдокласс hover сработает при наведении на элемент */
+  .link-selector:hover {
+    color: blue;
+  }
