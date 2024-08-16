@@ -1,0 +1,93 @@
+li>span {
+    font-weight: bold;
+  }
+  
+  .containerGrid {
+    display: grid;
+    /* * 1fr - равен одному 'кусочку', если в схеме их несколько фреймы равны между собой */
+    /* можно указывать ширину каждой колонки через пробел в ряд */
+    /* grid-template-columns: 3fr 1fr 2fr 1fr; */
+    /* или с помощью функции repeat мы указываем первым аргументом количество повторяющихся элементов, вторым аргументом их размер */
+    grid-template-columns: repeat(5, 1fr);
+    /* размер для строк */
+    grid-auto-rows: 60px;
+    gap: 5px;
+    width: 100%;
+  }
+  
+  .gridItem {
+    padding: 10px;
+    background-color: cornflowerblue;
+  }
+  
+  .relativeItem {
+    background-color: coral;
+    position: relative;
+    right: 10px;
+    top: 10px;
+  }
+  
+  .containerGridMinMax {
+    display: grid;
+    gap: 5px;
+    /* контейнеры будут растягиваться до момента пока в свободное пространство не поместится новый элемент с минимальным размером (в данном случае 100px) */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 80px;
+  }
+  
+  .gridItemAdaptive {
+    background-color: goldenrod;
+  }
+  
+  .containerGridAreas {
+    display: grid;
+    width: 100%;
+    height: 600px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    'header header header'
+    'content content scramble'
+    'content content 🐥'
+    'footer footer footer'
+    ;
+  }
+  
+  .egg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://aliahijabs.com/cdn/shop/products/15_410332ce-51d0-417d-a171-109c662edccb.jpg?v=1624224978');
+    background-size: cover;
+    background-position: center;
+    grid-area: scramble;
+    font-size: 100px;
+  }
+  
+  .top {
+    background-color: rgb(255, 214, 182);
+    grid-area: header;
+  }
+  
+  .bottom {
+    background-color: lightgreen;
+    grid-area: footer;
+  }
+  
+  .content {
+    background-color: lightblue;
+    grid-area: content;
+    background-image: url('https://d.newsweek.com/en/full/2137039/ikeas-blahaj-shark.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .chicken {
+    border: 2px solid #5FCEF7;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 🐥;
+  }
+  
+  
