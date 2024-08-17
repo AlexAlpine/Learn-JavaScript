@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- если подключаете js в head не забудьте указать defer, чтобы файл отработал после отрисовки всех html элементов -->
+    <script defer src="script.js"></script>
+    <title>JS DOM</title>
+  </head>
+
+  <body>
+    <h1>JS DOM</h1>
+    <p id="desc__first">Все элементы на web странице можно представить в виде глобального объекта document и иметь к ним
+      доступ</p>
+    <p>чтобы находить элементы в DOM можно использовать методы поиска отличительным особенностям элементов:</p>
+    <ul class="method-list">
+      <li>тегам - <span>document.getElementsByTagName()</span></li>
+      <li>классам - <span>document.getElementsByClassName()</span></li>
+      <li>id - <span>document.getElementById()</span></li>
+      <li> <span>document.querySelector()</span> - универсальный метод. Класс ищется через обращение через точку, id -
+        через #</li>
+    </ul>
+    <p>Обратите внимание что значение в круглых скобках для поиска передается в виде строки, т.е в кавычках (двойных,
+      одинарных или косых)</p>
+
+    <button style="background-color: rgb(174, 237, 252);" id="btn-change">Change heading color</button>
+    <button style="background-color: burlywood;" id="btn-hide">Hide list</button>
+    <button style="background-color: rgb(197, 255, 181);" id="btn-create">Create element</button>
+    <!-- здесь мог бы быть javascript файл, но удобнее подключить его в head после CSS -->
+  </body>
+
+</html>
