@@ -39,3 +39,4 @@ const starWarsHeroes = [
 Создайте новый массив, где "Anakin Skywalker" заменен на
 `{ name: "Darth Vader", isJedi: false, age: 50 }`
 
+

@@ -1,0 +1,27 @@
+body {
+  font-family:'Courier New', Courier, monospace
+}
+
+.counter-container {
+  text-align: center;
+}
+
+.counter-container>span {
+  font-size: 23px;
+  margin: 0px 4px;
+  font-weight: bold;
+}
+
+.counter-container>button {
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  height: 26px;
+  width: 35px;
+  color: white;
+  background-color: rgb(83, 93, 172);
+}
+
+.counter-container>button:hover {
+  background-color: rgb(113, 123, 199);
+}

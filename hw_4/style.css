@@ -1,0 +1,48 @@
+/* ваш код */
+* {
+    box-sizing: border-box;
+  }
+  
+  .card {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  
+  .poster {
+    height: 300px;
+  }
+  
+  .rating {
+    padding: 4px;
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    color: white;
+    width: fit-content;
+  }
+  
+  .rating__green {
+    background-color: #3BB33A;
+  }
+  
+  .rating__red {
+    background-color: #FF0000;
+  }
+  
+  .tickets {
+    bottom: 12px;
+    right: 11px;
+    position: absolute;
+    width: fit-content;
+    background-color: #FF5501;
+    color: white;
+    padding: 4px;
+  }
+  
+  /* .sticky {
+    position: sticky;
+    top: 0px;
+    margin: 0;
+    background-color: yellow;
+  } */
