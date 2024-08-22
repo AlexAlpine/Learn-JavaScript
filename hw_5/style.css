@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: 400vh;
+}
+
+header {
+  width: 100%;
+  min-height: 80px;
+  padding: 20px 0 15px;
+  display: flex;
+  justify-content: center;
+  /* устанавливаем картинку на фон контейнера */
+  background-image: url('imagebanner.jpeg');
+  /* картинка будет закрывать собой весь контейнер, не повторяться и обрезать не влезающие части */
+  background-size: cover;
+  /* устанавливаем картинку по центру */
+  background-position: center;
+}
+
+.logo {
+  height: 30px;
+}
+
+nav {
+  display: flex;
+  align-items: end;
+  /* устанавливаем промежуток между элементами flex */
+  gap: 20px;
+}
+
+/* делаем flex контейнерами обертку для элементов меню */
+/* ставим их по центру по вертикали */
+.nav__container {
+  display: flex;
+  align-items: center;
+  /* толщина элементов 50% */
+  opacity: 0.5;
+  /* плавное изменение толщины */
+  transition: opacity 0.2s ease-in-out;
+
+}
+
+.nav__container > span {
+  color: #fff;
+}
+
+.nav__input {
+  opacity: 0.5;
+  /* плавное изменение свойства opacity */
+  /* ! transition указываем для самого селектора, не в :hover */
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* псевдокласс hover включает стили, которые сработают при наведении на элемент мышкой */
+.nav__input:hover {
+  /* изменение стиля курсора  */
+  cursor: pointer;
+  opacity: 1;
+}
+
+.nav__container:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
