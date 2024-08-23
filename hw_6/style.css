@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+   /* корневой размер шрифта */
+  font-size: 15px;
+}
+
+body {
+  /* чтобы приклеить footer к низу задаем всей страница flex с вертикальным ориентированием */
+  display: flex;
+  flex-direction: column;
+  /* минимальный размер видимой области будет 100vh */
+  min-height: 100vh;
+  margin: 0;
+  /* подключение шрифта к странице */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  /* приклеиваем header */
+  position: sticky;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 8px 15px;
+  background-color: #2b5e35;
+  color: white;
+}
+
+main {
+  padding: 8px 15px;
+  /* за счет этого свойства main занимает все свободное пространство на странице, между header и footer даже если контента мало */
+  flex: 1;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+.grid-gallery {
+  display: grid;
+  /* адаптивная галерея с переносом резиновых карточек на следующие строки */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 400px;
+  gap: 5px;
+}
+
+.grid-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #e9eae9;
+  padding: 18px;
+}
+
+/* этот контейнере - рамка / обертка для картинок  */
+/* ей задан жесткий размер под который будет обрезаться любая картинка */
+.img-wrapper {
+  width: 100%;
+  height: 200px;
+}
+
+.img-wrapper > img {
+  /* за счет этих свойств картинка растягивается равномерно по размеру контейнера-родителя */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  padding: 8px;
+  background-color: #585860;
+  color: white;
+  font-size: 0.8rem;
+}
