@@ -18,8 +18,7 @@ heading.innerText = "DOM: Document Object Model";
 let btnChange = document.querySelector("#btn-change");
 let btnHide = document.getElementById("btn-hide");
 let list = document.querySelector(".method-list");
-let btnCreate = document.querySelector('#btn-create')
-
+let btnCreate = document.querySelector("#btn-create");
 
 // функция слушатель событий которую мы 'вешаем' на кнопку
 // она ждет в себя первым параметром тип события в виде строки, например 'click'
@@ -43,15 +42,15 @@ btnHide.addEventListener("click", () => {
   }
 });
 
-btnCreate.addEventListener('click', () => {
+btnCreate.addEventListener("click", () => {
   // создаем новый элемент и кладем его в переменную перед добавлением на страницу
-  let newElement = document.createElement('p')
+  let newElement = document.createElement("p");
   // добавляем текст
-  newElement.innerText = 'Кажется, я начинаю понимать этот DOM 🏡'
+  newElement.innerText = "Кажется, я начинаю понимать этот DOM 🏡";
   // красим элемент
-  newElement.style.color = 'rgb(0, 0, 139)'
+  newElement.style.color = "rgb(0, 0, 139)";
   // ! важно не забыть добавить элемент на страницу
   // добавляем новый элемент в конец body
-  document.body.appendChild(newElement)
+  document.body.appendChild(newElement);
   console.log(newElement);
-})
+});
