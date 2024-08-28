@@ -178,6 +178,6 @@ console.log(sum);
 // к первому мы добавляем второе на каждой итерации
 
 console.log(brothersAges);
-let sum2 = brothersAges.reduce((acc, current) => acc + current, 1000);
+let sum2 = brothersAges.reduce((acc, current) => acc + current, 0);
 
 console.log(sum2);
